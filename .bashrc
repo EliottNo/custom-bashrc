@@ -15,10 +15,12 @@ RESET="\[$(tput sgr0)\]"
 [[ $- != *i* ]] && return
 
 # Aliases
+alias v='$EDITOR'
 alias ls='ls -X --color=auto'
 alias wget='wget --show-progress'
 alias less='less -N'
 alias grep='grep --color'
+alias ip='ip -color=auto'
 
 # Custom prompt
 PS1="${BOLD}${BLUE}[${RESET}${BOLD}${GREEN}\u${RESET}${BOLD}${RED}@${RESET}${BOLD}${GREEN}\h${RESET}${BOLD}${BLUE}]${RESET} ${BOLD}${YELLOW}\w${RESET} ${BOLD}${WHITE}\$${RESET} "
